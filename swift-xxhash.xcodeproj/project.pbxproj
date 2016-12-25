@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9C6E3791DECBC0C00329897 /* XXHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C6E36F1DECBC0B00329897 /* XXHash.framework */; };
-		C9C6E37E1DECBC0C00329897 /* swift_xxhashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6E37D1DECBC0C00329897 /* swift_xxhashTests.swift */; };
+		C962F8541E1083E300D743AB /* xxHashTests in Resources */ = {isa = PBXBuildFile; fileRef = C962F8531E1083E300D743AB /* xxHashTests */; };
+		C9C6E3791DECBC0C00329897 /* xxHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C6E36F1DECBC0B00329897 /* xxHash.framework */; };
 		C9C6E3801DECBC0C00329897 /* swift-xxhash.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C6E3721DECBC0B00329897 /* swift-xxhash.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9C6E38A1DECBC2D00329897 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6E3891DECBC2D00329897 /* Hash.swift */; };
+		C9C6E38A1DECBC2D00329897 /* xxHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6E3891DECBC2D00329897 /* xxHash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,13 +24,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C9C6E36F1DECBC0B00329897 /* XXHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XXHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9C6E3721DECBC0B00329897 /* swift-xxhash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-xxhash.h"; sourceTree = "<group>"; };
-		C9C6E3731DECBC0B00329897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9C6E3781DECBC0C00329897 /* XXHashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XXHashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9C6E37D1DECBC0C00329897 /* swift_xxhashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_xxhashTests.swift; sourceTree = "<group>"; };
+		C962F8531E1083E300D743AB /* xxHashTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = xxHashTests; sourceTree = "<group>"; };
+		C9C6E36F1DECBC0B00329897 /* xxHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = xxHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C6E3721DECBC0B00329897 /* swift-xxhash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "swift-xxhash.h"; path = "Sources/xxHash/swift-xxhash.h"; sourceTree = SOURCE_ROOT; };
+		C9C6E3731DECBC0B00329897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/xxHash/Info.plist; sourceTree = SOURCE_ROOT; };
+		C9C6E3781DECBC0C00329897 /* xxHashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xxHashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C6E37F1DECBC0C00329897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9C6E3891DECBC2D00329897 /* Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
+		C9C6E3891DECBC2D00329897 /* xxHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = xxHash.swift; path = Sources/xxHash/xxHash.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,18 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9C6E3791DECBC0C00329897 /* XXHash.framework in Frameworks */,
+				C9C6E3791DECBC0C00329897 /* xxHash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C962F8501E107C6000D743AB /* xxHash */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6E3721DECBC0B00329897 /* swift-xxhash.h */,
+				C9C6E3731DECBC0B00329897 /* Info.plist */,
+				C9C6E3891DECBC2D00329897 /* xxHash.swift */,
+			);
+			name = xxHash;
+			sourceTree = "<group>";
+		};
 		C9C6E3651DECBC0B00329897 = {
 			isa = PBXGroup;
 			children = (
-				C9C6E3711DECBC0B00329897 /* swift-xxhash */,
-				C9C6E37C1DECBC0C00329897 /* swift-xxhashTests */,
+				C9C6E3711DECBC0B00329897 /* Sources */,
+				C9C6E37C1DECBC0C00329897 /* Tests */,
 				C9C6E3701DECBC0B00329897 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,29 +74,28 @@
 		C9C6E3701DECBC0B00329897 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C9C6E36F1DECBC0B00329897 /* XXHash.framework */,
-				C9C6E3781DECBC0C00329897 /* XXHashTests.xctest */,
+				C9C6E36F1DECBC0B00329897 /* xxHash.framework */,
+				C9C6E3781DECBC0C00329897 /* xxHashTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C9C6E3711DECBC0B00329897 /* swift-xxhash */ = {
+		C9C6E3711DECBC0B00329897 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C9C6E3721DECBC0B00329897 /* swift-xxhash.h */,
-				C9C6E3731DECBC0B00329897 /* Info.plist */,
-				C9C6E3891DECBC2D00329897 /* Hash.swift */,
+				C962F8501E107C6000D743AB /* xxHash */,
 			);
+			name = Sources;
 			path = "swift-xxhash";
 			sourceTree = "<group>";
 		};
-		C9C6E37C1DECBC0C00329897 /* swift-xxhashTests */ = {
+		C9C6E37C1DECBC0C00329897 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				C9C6E37D1DECBC0C00329897 /* swift_xxhashTests.swift */,
+				C962F8531E1083E300D743AB /* xxHashTests */,
 				C9C6E37F1DECBC0C00329897 /* Info.plist */,
 			);
-			path = "swift-xxhashTests";
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +112,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C9C6E36E1DECBC0B00329897 /* XXHash */ = {
+		C9C6E36E1DECBC0B00329897 /* xxHash */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9C6E3831DECBC0C00329897 /* Build configuration list for PBXNativeTarget "XXHash" */;
+			buildConfigurationList = C9C6E3831DECBC0C00329897 /* Build configuration list for PBXNativeTarget "xxHash" */;
 			buildPhases = (
 				C9C6E36A1DECBC0B00329897 /* Sources */,
 				C9C6E36B1DECBC0B00329897 /* Frameworks */,
@@ -116,14 +125,14 @@
 			);
 			dependencies = (
 			);
-			name = XXHash;
+			name = xxHash;
 			productName = "swift-xxhash";
-			productReference = C9C6E36F1DECBC0B00329897 /* XXHash.framework */;
+			productReference = C9C6E36F1DECBC0B00329897 /* xxHash.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C9C6E3771DECBC0C00329897 /* XXHashTests */ = {
+		C9C6E3771DECBC0C00329897 /* xxHashTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9C6E3861DECBC0C00329897 /* Build configuration list for PBXNativeTarget "XXHashTests" */;
+			buildConfigurationList = C9C6E3861DECBC0C00329897 /* Build configuration list for PBXNativeTarget "xxHashTests" */;
 			buildPhases = (
 				C9C6E3741DECBC0C00329897 /* Sources */,
 				C9C6E3751DECBC0C00329897 /* Frameworks */,
@@ -134,9 +143,9 @@
 			dependencies = (
 				C9C6E37B1DECBC0C00329897 /* PBXTargetDependency */,
 			);
-			name = XXHashTests;
+			name = xxHashTests;
 			productName = "swift-xxhashTests";
-			productReference = C9C6E3781DECBC0C00329897 /* XXHashTests.xctest */;
+			productReference = C9C6E3781DECBC0C00329897 /* xxHashTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -172,8 +181,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C9C6E36E1DECBC0B00329897 /* XXHash */,
-				C9C6E3771DECBC0C00329897 /* XXHashTests */,
+				C9C6E36E1DECBC0B00329897 /* xxHash */,
+				C9C6E3771DECBC0C00329897 /* xxHashTests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C962F8541E1083E300D743AB /* xxHashTests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9C6E38A1DECBC2D00329897 /* Hash.swift in Sources */,
+				C9C6E38A1DECBC2D00329897 /* xxHash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9C6E37E1DECBC0C00329897 /* swift_xxhashTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +226,7 @@
 /* Begin PBXTargetDependency section */
 		C9C6E37B1DECBC0C00329897 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C9C6E36E1DECBC0B00329897 /* XXHash */;
+			target = C9C6E36E1DECBC0B00329897 /* xxHash */;
 			targetProxy = C9C6E37A1DECBC0C00329897 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -332,7 +341,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "swift-xxhash/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/xxHash/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.haveahennessy.swift-xxhash";
@@ -354,7 +363,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "swift-xxhash/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/xxHash/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.haveahennessy.swift-xxhash";
@@ -402,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9C6E3831DECBC0C00329897 /* Build configuration list for PBXNativeTarget "XXHash" */ = {
+		C9C6E3831DECBC0C00329897 /* Build configuration list for PBXNativeTarget "xxHash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9C6E3841DECBC0C00329897 /* Debug */,
@@ -411,7 +420,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9C6E3861DECBC0C00329897 /* Build configuration list for PBXNativeTarget "XXHashTests" */ = {
+		C9C6E3861DECBC0C00329897 /* Build configuration list for PBXNativeTarget "xxHashTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9C6E3871DECBC0C00329897 /* Debug */,

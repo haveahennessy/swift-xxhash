@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import XXHash
+@testable import xxHash
 
 class swift_xxhashTests: XCTestCase {
     
