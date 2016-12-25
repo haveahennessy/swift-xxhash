@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C962F8541E1083E300D743AB /* xxHashTests in Resources */ = {isa = PBXBuildFile; fileRef = C962F8531E1083E300D743AB /* xxHashTests */; };
+		C962F8591E1085EC00D743AB /* xxHashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C962F8571E1085DD00D743AB /* xxHashTests.swift */; };
 		C9C6E3791DECBC0C00329897 /* xxHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C6E36F1DECBC0B00329897 /* xxHash.framework */; };
 		C9C6E3801DECBC0C00329897 /* swift-xxhash.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C6E3721DECBC0B00329897 /* swift-xxhash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9C6E38A1DECBC2D00329897 /* xxHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6E3891DECBC2D00329897 /* xxHash.swift */; };
@@ -24,7 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C962F8531E1083E300D743AB /* xxHashTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = xxHashTests; sourceTree = "<group>"; };
+		C962F8571E1085DD00D743AB /* xxHashTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = xxHashTests.swift; path = xxHashTests/xxHashTests.swift; sourceTree = "<group>"; };
 		C9C6E36F1DECBC0B00329897 /* xxHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = xxHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C6E3721DECBC0B00329897 /* swift-xxhash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "swift-xxhash.h"; path = "Sources/xxHash/swift-xxhash.h"; sourceTree = SOURCE_ROOT; };
 		C9C6E3731DECBC0B00329897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/xxHash/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -62,6 +62,14 @@
 			name = xxHash;
 			sourceTree = "<group>";
 		};
+		C962F8561E1085D200D743AB /* xxHashTests */ = {
+			isa = PBXGroup;
+			children = (
+				C962F8571E1085DD00D743AB /* xxHashTests.swift */,
+			);
+			name = xxHashTests;
+			sourceTree = "<group>";
+		};
 		C9C6E3651DECBC0B00329897 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +100,7 @@
 		C9C6E37C1DECBC0C00329897 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				C962F8531E1083E300D743AB /* xxHashTests */,
+				C962F8561E1085D200D743AB /* xxHashTests */,
 				C9C6E37F1DECBC0C00329897 /* Info.plist */,
 			);
 			path = Tests;
@@ -192,7 +200,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C962F8541E1083E300D743AB /* xxHashTests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C962F8591E1085EC00D743AB /* xxHashTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +386,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "swift-xxhashTests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.haveahennessy.swift-xxhashTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -391,7 +399,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "swift-xxhashTests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.haveahennessy.swift-xxhashTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
